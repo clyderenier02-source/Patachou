@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *;
+@use "../components/button" as *;
+
+.signature {
+        font-family: $font-family-base;
+        color: $white;
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+        padding: 4rem 0;
+        background-color: $secondary-color;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &_img {
+            width: 250px;
+            margin: 40px;
+        }
+
+        &_sub {
+            padding: 0 1rem;
+            font-size: 0.8rem;
+            margin-top: 20px;
+            font-family: $font-family-logo;
+            font-weight: 500;
+
+            h3 {
+                font-family: $font-family-base;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 3rem;
+            }
+        }
+
+        
+}

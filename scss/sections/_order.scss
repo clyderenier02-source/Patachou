@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as *;
+
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 2rem;
+
+    h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: auto;
+        margin-top: 2rem;
+        font-family: $font-family-base;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1.5px;
+            background-color: $black;
+            margin: 2rem auto;
+            width: 310px;
+            max-width: 100%;
+        }
+    }
+
+    span {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+
+.formulaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .username {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .username1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+button {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}

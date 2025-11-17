@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+.localisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .localisation_sub {
+    background-color: $secondary-color;
+    color: $white;
+    height: 200px;
+    padding: 2rem;
+    font-family: $font-family-base;
+    }
+}

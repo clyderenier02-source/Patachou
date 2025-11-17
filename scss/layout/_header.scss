@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    gap: 0.5rem;
+
+    a {
+        color: $black;
+        font-weight: 550;
+    }   
+    
+    span {
+        color: #AB864C;
+    }
+    
+
+}

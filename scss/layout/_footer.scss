@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+
+.contact {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    padding: 4rem 0;
+
+    span {
+        color: $secondary-color;
+    }
+
+    &_service {
+        padding: 2rem 7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &_service li a{
+        align-items: flex-start;
+        color: $white;
+    }
+
+    &_horaire {
+        margin-bottom: 1rem;
+    }
+
+    &_icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_icon_sub {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 20px;
+        gap: 5px;
+    }
+}

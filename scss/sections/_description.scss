@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: $font-family-base;
+
+    p {
+        margin-top: 4rem;
+        padding: 0.5rem;
+        max-width: 600px;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    span {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &_p {
+        border: $black 1px solid;
+        width: auto;
+        font-weight: 100;
+        margin-bottom: 3rem;
+    }
+}

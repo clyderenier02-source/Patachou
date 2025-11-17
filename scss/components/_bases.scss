@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../components/button" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-family-logo;
+}
+
+h1 {
+    font-family: $font-family-base;
+}
+
+li {
+    list-style: none;
+    a {text-decoration: none;}
+}
+
+button {
+    @include button;
+}

@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../components/button" as *;
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    &_img {
+        width: 200px;
+        margin-top: 7rem;
+    }
+
+    &_img1 {
+        margin-top: 2rem;
+        width: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 1rem;
+        font-family: $font-family-base;
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-bottom: 2rem;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    align-self: flex-start;
+    border: none;
+}
