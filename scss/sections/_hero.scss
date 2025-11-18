@@ -16,6 +16,10 @@
         margin: 1rem;
         padding: 1.6rem;
         text-align: center;
+
+        @media (min-width: $tablette-width) {
+            padding: 1.6rem 7rem;
+        }
     }
 
     span {

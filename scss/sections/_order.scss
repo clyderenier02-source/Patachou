@@ -7,56 +7,133 @@
     justify-content: flex-start;
     padding: 0 2rem;
 
+    @media (min-width: $pc-width ) {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+    &_form {
+        @media (min-width: $pc-width ) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+    }
+
     h3 {
         text-align: center;
         font-size: 1.2rem;
         margin-top: auto;
         margin-top: 2rem;
         font-family: $font-family-base;
+        margin-bottom: 1rem;
+        // width: 90%;
+        // border-top: 1px solid $black;
+        padding-top: 2rem;
 
-        &::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 1.5px;
-            background-color: $black;
-            margin: 2rem auto;
-            width: 310px;
-            max-width: 100%;
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     width: 100%;
+        //     height: 1.5px;
+        //     background-color: $black;
+        //     margin: 2rem auto; 
+        //     max-width: 100%;
+
+        //     @media (min-width: $tablette-width) {
+        //         width: 90%;
+        //     }
+        // }
+
+        @media (min-width: $tablette-width) {
+            text-align: left;
+            font-size: 1.5rem;
         }
     }
 
-    span {
-        display: block;
-        margin-bottom: 2rem;
-    }
-
-
-.formulaire {
+    .formulaire {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 1rem;
 
-        .username {
+        label {
+            font-size: 0.8rem;
+        }
+        
+            .username1 {
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            }
+
+            .username_labels {
+            display: flex;
+            gap: 1rem;
+            
+            span {
+                width: 100%;
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+            }
         }
 
-        .username1 {
+        .username_sub {
+            display: flex;
+            flex-direction: column;
+
+            input {
+            margin-bottom: 1rem;
+            }
+
+            textarea{
+                height: 50px;
+            }
+        }
+
+        .username_chekbox {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            gap: 0.5rem;
+
+            input {
+                width: 1.5rem;
+
+                @media (min-width: $tablette-width) {
+                    height: 2rem;
+            }
+            }
+
+            @media (min-width: $tablette-width) {
             align-items: center;
-            text-align: center;
-            gap: 10px;
-            margin-bottom: 1rem;
+            justify-content: flex-start;
+            }
         }
     }
-}
 
-button {
+    .username1 input {
+        display: inline-block;
+        width: 49%;
+    }
+
+    span {
+        display: block;
+    }
+
+    button {
     text-align: center;
     width: 100%;
     margin-bottom: 2rem;
+
+    @media (min-width: $tablette-width ) {
+                margin-bottom: 6rem;
+        }
+}
 }

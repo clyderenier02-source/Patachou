@@ -10,14 +10,54 @@
     font-size: 0.8rem;
     font-weight: 500;
 
+    @media (min-width: $pc-width ) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+    
+        @media (min-width: $tablette-width ) {
+            align-items: flex-start;
+        }
+
     &_img {
-        width: 200px;
-        margin-top: 7rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
     }
 
     &_img1 {
+        width: 200px;
+        margin-top: 7rem;
+
+        @media (min-width: $tablette-width ) {
+                width: 300px;
+                margin: 0 auto;
+        }
+    }
+
+    &_img_sub {
+        width: 100%;
+        text-align: center;
+
+        @media (min-width: $tablette-width ) {
+                text-align: left;
+        }
+    }
+
+    &_img2 {
         margin-top: 2rem;
         width: 50px;
+    }
+
+    &_main {
+        @media (min-width: $pc-width ) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 3rem;
+        }
     }
 
     h2 {
@@ -27,17 +67,22 @@
         font-size: 2rem;
         font-weight: bolder;
         margin-bottom: 2rem;
+
+        @media (min-width: $tablette-width ) {
+                text-align: left;
+        }
     }
 
     span {
         display: block;
         margin-bottom: 2rem;
     }
-}
 
-button {
+    button {
     margin-top: 1rem;
     padding: 1rem;
     align-self: flex-start;
     border: none;
+    
+    }
 }

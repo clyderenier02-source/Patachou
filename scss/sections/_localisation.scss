@@ -8,10 +8,23 @@
     text-align: center;
 
     .localisation_sub {
-    background-color: $secondary-color;
     color: $white;
-    height: 200px;
-    padding: 2rem;
     font-family: $font-family-base;
+    background-color: $secondary-color;
+    width: 100%;
+    padding: 2rem;
+
+        h2 {
+            margin-bottom: 1rem;
+
+            @media (min-width: $tablette-width ) {
+                font-size: 3rem;
+        }
+        }
+
+        span {
+            display: block;
+        }
+    
     }
 }

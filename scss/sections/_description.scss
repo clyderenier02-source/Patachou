@@ -8,25 +8,42 @@
     text-align: center;
     font-family: $font-family-base;
 
-    p {
-        margin-top: 4rem;
-        padding: 0.5rem;
-        max-width: 600px;
-        font-size: 1.2rem;
-        font-weight: bolder;
+    &_text_1 {
+        padding: 2rem 0.5rem;
+        font-weight: 900;
+
+        @media (min-width: $tablette-width ) {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 0.3rem;
+        }
     }
 
-    span {
-        display: block;
-        margin-top: 1rem;
-        font-size: 1rem;
-        font-weight: 700;
+    &_text {
+        margin-bottom: 0.3rem;
+    }
+
+    &_text_guy {
+        font-size: 0.7rem;
+        padding: 0.4rem;
     }
 
     &_p {
+        font-family: $font-family-logo;
         border: $black 1px solid;
         width: auto;
-        font-weight: 100;
         margin-bottom: 3rem;
+
+        @media (min-width: $tablette-width ) {
+            padding: 2rem 4rem;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 4rem;
+        }
+
+        @media (min-width: $pc-width ) {
+            width: 50%;
+        }
+
     }
 }

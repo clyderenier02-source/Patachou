@@ -9,6 +9,17 @@ header {
     margin: 1rem;
     gap: 0.5rem;
 
+    nav ul {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablette-width) {
+        flex-direction: row;
+        font-size: 0.8rem;
+        gap: 1rem;
+        }
+    }
+
     a {
         color: $black;
         font-weight: 550;
@@ -16,6 +27,13 @@ header {
     
     span {
         color: #AB864C;
+    }
+
+    @media (min-width: $tablette-width) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
     }
     
 

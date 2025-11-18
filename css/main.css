@@ -17,6 +17,7 @@ li {
 }
 li a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 button {
@@ -39,6 +40,17 @@ header {
   margin: 1rem;
   gap: 0.5rem;
 }
+header nav ul {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 728px) {
+  header nav ul {
+    flex-direction: row;
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+}
 header a {
   color: #000000;
   font-weight: 550;
@@ -46,42 +58,86 @@ header a {
 header span {
   color: #AB864C;
 }
+@media (min-width: 728px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
 
-.contact {
+.footer {
   background-color: #000000;
+  color: #ffffff;
+  padding: 3rem 0 0 0;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 728px) {
+  .footer_content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: auto;
+  }
+}
+.footer_logo {
+  margin-bottom: 2rem;
+}
+.footer_nav {
+  margin-bottom: 2rem;
+}
+.footer_nav ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_div {
+  margin-bottom: 2rem;
+}
+.footer_div .footer_title {
+  margin-bottom: 1rem;
+}
+.footer_div_ {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  padding: 4rem 0;
-}
-.contact span {
-  color: #AB864C;
-}
-.contact_service {
-  padding: 2rem 7rem;
-  margin-bottom: 0.5rem;
-}
-.contact_service li a {
-  align-items: flex-start;
-  color: #ffffff;
-}
-.contact_horaire {
   margin-bottom: 1rem;
 }
-.contact_icon {
-  display: flex;
-  flex-direction: column;
+@media (min-width: 728px) {
+  .footer_div_ {
+    gap: 1rem;
+  }
 }
-.contact_icon_sub {
-  padding-top: 1rem;
+.footer_div_icon {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
   width: 20px;
-  gap: 5px;
+  gap: 1rem;
+}
+.footer_mentions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+  border: 1px solid #AB864C;
+  width: 100%;
+  padding: 1rem 0;
+}
+@media (min-width: 728px) {
+  .footer_mentions {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
 .hero {
@@ -101,6 +157,11 @@ header span {
   padding: 1.6rem;
   text-align: center;
 }
+@media (min-width: 728px) {
+  .hero h1 {
+    padding: 1.6rem 7rem;
+  }
+}
 .hero span {
   display: block;
 }
@@ -113,24 +174,42 @@ header span {
   text-align: center;
   font-family: "Kaisei Decol";
 }
-.description p {
-  margin-top: 4rem;
-  padding: 0.5rem;
-  max-width: 600px;
-  font-size: 1.2rem;
-  font-weight: bolder;
+.description_text_1 {
+  padding: 2rem 0.5rem;
+  font-weight: 900;
 }
-.description span {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: 700;
+@media (min-width: 728px) {
+  .description_text_1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+  }
+}
+.description_text {
+  margin-bottom: 0.3rem;
+}
+.description_text_guy {
+  font-size: 0.7rem;
+  padding: 0.4rem;
 }
 .description_p {
+  font-family: "Poppins";
   border: #000000 1px solid;
   width: auto;
-  font-weight: 100;
   margin-bottom: 3rem;
+}
+@media (min-width: 728px) {
+  .description_p {
+    padding: 2rem 4rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .description_p {
+    width: 50%;
+  }
 }
 
 .signature {
@@ -146,9 +225,20 @@ header span {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 728px) {
+  .signature {
+    padding: 4rem 7rem;
+  }
+}
 .signature_img {
   width: 250px;
   margin: 40px;
+}
+@media (min-width: 1400px) {
+  .signature_groupe {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .signature_sub {
   padding: 0 1rem;
@@ -163,6 +253,16 @@ header span {
   font-weight: 600;
   margin-bottom: 3rem;
 }
+.signature button {
+  border: #ffffff 1px solid;
+}
+@media (min-width: 728px) {
+  .signature button {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    width: 300px;
+  }
+}
 
 .history {
   display: flex;
@@ -173,13 +273,53 @@ header span {
   font-size: 0.8rem;
   font-weight: 500;
 }
+@media (min-width: 1400px) {
+  .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 728px) {
+  .history {
+    align-items: flex-start;
+  }
+}
 .history_img {
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}
+.history_img1 {
   width: 200px;
   margin-top: 7rem;
 }
-.history_img1 {
+@media (min-width: 728px) {
+  .history_img1 {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+.history_img_sub {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 728px) {
+  .history_img_sub {
+    text-align: left;
+  }
+}
+.history_img2 {
   margin-top: 2rem;
   width: 50px;
+}
+@media (min-width: 1400px) {
+  .history_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+  }
 }
 .history h2 {
   text-align: center;
@@ -189,12 +329,16 @@ header span {
   font-weight: bolder;
   margin-bottom: 2rem;
 }
+@media (min-width: 728px) {
+  .history h2 {
+    text-align: left;
+  }
+}
 .history span {
   display: block;
   margin-bottom: 2rem;
 }
-
-button {
+.history button {
   margin-top: 1rem;
   padding: 1rem;
   align-self: flex-start;
@@ -207,26 +351,34 @@ button {
   justify-content: flex-start;
   padding: 0 2rem;
 }
+@media (min-width: 1400px) {
+  .order {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1400px) {
+  .order_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
 .order h3 {
   text-align: center;
   font-size: 1.2rem;
   margin-top: auto;
   margin-top: 2rem;
   font-family: "Kaisei Decol";
+  margin-bottom: 1rem;
+  padding-top: 2rem;
 }
-.order h3::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1.5px;
-  background-color: #000000;
-  margin: 2rem auto;
-  width: 310px;
-  max-width: 100%;
-}
-.order span {
-  display: block;
-  margin-bottom: 2rem;
+@media (min-width: 728px) {
+  .order h3 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
 }
 .order .formulaire {
   display: flex;
@@ -234,24 +386,73 @@ button {
   justify-content: center;
   margin-top: 1rem;
 }
-.order .formulaire .username {
-  display: flex;
-  flex-direction: row;
+.order .formulaire label {
+  font-size: 0.8rem;
 }
 .order .formulaire .username1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
   gap: 10px;
+  width: 100%;
+}
+.order .formulaire .username_labels {
+  display: flex;
+  gap: 1rem;
+}
+.order .formulaire .username_labels span {
+  width: 100%;
+  font-size: 0.85rem;
   margin-bottom: 1rem;
 }
-
-button {
+.order .formulaire .username_sub {
+  display: flex;
+  flex-direction: column;
+}
+.order .formulaire .username_sub input {
+  margin-bottom: 1rem;
+}
+.order .formulaire .username_sub textarea {
+  height: 50px;
+}
+.order .formulaire .username_chekbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+.order .formulaire .username_chekbox input {
+  width: 1.5rem;
+}
+@media (min-width: 728px) {
+  .order .formulaire .username_chekbox input {
+    height: 2rem;
+  }
+}
+@media (min-width: 728px) {
+  .order .formulaire .username_chekbox {
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.order .username1 input {
+  display: inline-block;
+  width: 49%;
+}
+.order span {
+  display: block;
+}
+.order button {
   text-align: center;
   width: 100%;
   margin-bottom: 2rem;
+}
+@media (min-width: 728px) {
+  .order button {
+    margin-bottom: 6rem;
+  }
 }
 
 .localisation {
@@ -262,11 +463,22 @@ button {
   text-align: center;
 }
 .localisation .localisation_sub {
-  background-color: #AB864C;
   color: #ffffff;
-  height: 200px;
-  padding: 2rem;
   font-family: "Kaisei Decol";
+  background-color: #AB864C;
+  width: 100%;
+  padding: 2rem;
+}
+.localisation .localisation_sub h2 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 728px) {
+  .localisation .localisation_sub h2 {
+    font-size: 3rem;
+  }
+}
+.localisation .localisation_sub span {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
