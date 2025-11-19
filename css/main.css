@@ -350,19 +350,29 @@ header span {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 2rem;
+  margin: 1rem;
+  border-top: 1px solid #000000;
 }
 @media (min-width: 1400px) {
   .order {
     display: flex;
     flex-direction: row;
+    margin: 10rem;
+    border-top: 1px solid #000000;
   }
 }
 @media (min-width: 1400px) {
-  .order_form {
+  .order_sub {
+    margin-right: 4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .order .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 3rem;
+    width: 150%;
   }
 }
 .order h3 {
@@ -372,7 +382,7 @@ header span {
   margin-top: 2rem;
   font-family: "Kaisei Decol";
   margin-bottom: 1rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 @media (min-width: 728px) {
   .order h3 {
@@ -411,6 +421,7 @@ header span {
 }
 .order .formulaire .username_sub input {
   margin-bottom: 1rem;
+  height: 30px;
 }
 .order .formulaire .username_sub textarea {
   height: 50px;
@@ -440,6 +451,7 @@ header span {
 .order .username1 input {
   display: inline-block;
   width: 49%;
+  height: 30px;
 }
 .order span {
   display: block;
