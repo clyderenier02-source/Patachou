@@ -150,7 +150,6 @@ header span {
   font-weight: bolder;
   background-color: #ffffff;
   opacity: 0.91;
-  margin: 1rem;
   padding: 1.6rem;
   text-align: center;
 }
@@ -173,7 +172,7 @@ header span {
 }
 .description_text_1 {
   padding: 2rem 0.5rem;
-  font-weight: 900;
+  font-weight: bolder;
 }
 @media (min-width: 728px) {
   .description_text_1 {
@@ -194,6 +193,8 @@ header span {
   border: #000000 1px solid;
   width: auto;
   margin-bottom: 3rem;
+  padding: 0.7rem;
+  font-size: 0.9rem;
 }
 @media (min-width: 728px) {
   .description_p {
