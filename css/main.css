@@ -118,7 +118,7 @@ header span {
   flex-direction: row;
   justify-content: flex-start;
   width: 20px;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .footer_mentions {
   display: flex;
@@ -235,6 +235,9 @@ header span {
   .signature_groupe {
     display: flex;
     flex-direction: row;
+  }
+  .signature_groupe p {
+    padding: 0 2rem;
   }
 }
 .signature_sub {

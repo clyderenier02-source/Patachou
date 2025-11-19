@@ -28,6 +28,10 @@
             @media (min-width: $pc-width ) {
                 display: flex;
                 flex-direction: row;
+
+                p {
+                    padding: 0 2rem;
+                }
         }
         }
 
