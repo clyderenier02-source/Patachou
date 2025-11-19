@@ -204,7 +204,7 @@ header span {
     margin-bottom: 4rem;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .description_p {
     width: 50%;
   }
@@ -232,7 +232,7 @@ header span {
   width: 250px;
   margin: 40px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .signature_groupe {
     display: flex;
     flex-direction: row;
@@ -274,7 +274,7 @@ header span {
   font-size: 0.8rem;
   font-weight: 500;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .history {
     display: flex;
     flex-direction: row;
@@ -317,7 +317,7 @@ header span {
   margin-top: 2rem;
   width: 50px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .history_main {
     display: flex;
     flex-direction: column;
@@ -358,7 +358,7 @@ header span {
   margin: 1rem;
   border-top: 1px solid #000000;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .order {
     display: flex;
     flex-direction: row;
@@ -367,12 +367,12 @@ header span {
     border-top: 1px solid #000000;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .order_sub {
     margin-right: 4rem;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .order .form {
     display: flex;
     flex-direction: column;
