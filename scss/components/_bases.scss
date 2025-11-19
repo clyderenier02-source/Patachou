@@ -17,11 +17,12 @@ h1 {
 
 li {
     list-style: none;
-    a {
+}
+
+a {
         text-decoration: none;
         color: $white
     }
-}
 
 button {
     @include button;

@@ -5,11 +5,6 @@
     color: $white;
     padding: 3rem 0 0 0;
 
-    a {
-        color: $white;
-        text-decoration: none;
-    }
-
     &_content {
         display: flex;
         flex-direction: column;
@@ -20,6 +15,7 @@
             justify-content: space-evenly;
             align-items: flex-start;
             margin: auto;
+            font-size: 0.8rem;
         }
     }
 
@@ -29,10 +25,9 @@
 
     &_nav {
         margin-bottom: 2rem;
-        
-        ul {
-            list-style: none;
-            padding: 0;
+
+        span {
+            color: $secondary-color;
         }
     }
 
