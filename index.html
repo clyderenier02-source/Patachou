@@ -23,7 +23,6 @@
                 </ul>
             </nav>
         </div>
-        </nav>
     </header>
 
     <main>
@@ -105,26 +104,26 @@
 
             <div class="form">
             <form action="#" class="formulaire">
-                    <label for="">Votre nom et prénom</label>
+                    <label for="name">Votre nom et prénom</label>
                 <div class="username1">
-                    <input type="Votre nom et prénom" id="Votre nom et prénom" Votre nom et prénom="Votre nom et prénom">
-                    <input type="Votre nom et prénom" id="Votre nom et prénom" Votre nom et prénom="Votre nom et prénom">
+                    <input type="text" id="firstname" name="firstname" required>
+                    <input type="text" id="lastname" name="lastname" required>
                 </div>
                 <div class="username_labels">
                     <span>Prénom</span>
                     <span>Nom</span>
                 </div>
                 <div class="username_sub">
-                    <label for="">Votre email</label>
-                    <input type="Votre email">
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="username_sub">
-                    <label for="">Votre message</label>
-                    <textarea id="message" rows="2" cols="30"required></textarea>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" required></textarea>
                 </div>
                 <div class="username_chekbox">
-                    <input type="checkbox" cols="1">
-                    <libellé> J'ai lu et j'accepte la politique de confidentialité </libellé> </input>
+                    <input type="checkbox" id="chekbox" name="chekbox" required>
+                    <label for="chekbox">J'ai lu et j'accepte la politique de confidentialité</label>
                 </div>
                     <button>Envoyer</button>
             </form>
@@ -134,11 +133,13 @@
         <section class="localisation">
             <div class="localisation_sub">
             <h2>Notre atelier et notre boutique</h2>
-            <p>14 Boulevard Yvonne Poirel <span>49000 ANGERS</p>
+            <p>14 Boulevard Yvonne Poirel 49000 ANGERS</p>
             </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.4821807594735!2d-0.5643412225357025!3d47.461032498016706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers!5e0!3m2!1sfr!2sfr!4v1763390546980!5m2!1sfr!2sfr"
-                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe></a>
+            <div class="localisation_map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.4821807594735!2d-0.5643412225357025!3d47.461032498016706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers!5e0!3m2!1sfr!2sfr!4v1763390546980!5m2!1sfr!2sfr">
+                </iframe>
+            </div>
         </section>
 
     <footer class="footer">
